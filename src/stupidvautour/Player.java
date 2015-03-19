@@ -12,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author Decalog2
  */
-public class Player {
+public abstract class Player {
     
     private String name;
     private ArrayList<PlayerCard> listPlayerCard;
@@ -21,6 +21,7 @@ public class Player {
     private int score; 
 
   
+    public abstract Card play() ;
     
     public Player () {
         listPlayerCard = new ArrayList<>();

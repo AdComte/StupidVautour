@@ -18,9 +18,10 @@ public class Game {
     
     public Game(int nbPlayer) {
         ArrayList<Player>  listPlayer = new ArrayList<>();
-        for (int i=0; i<nbPlayer; i++) {
-            listPlayer.add(new Player());
+        for (int i=0; i<nbPlayer-1; i++) {
+            listPlayer.add(new IAPlayer()) ;
         }
+        listPlayer.add(new Human()) ;
         this.table = new Table(listPlayer);
     }
     
