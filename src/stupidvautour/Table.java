@@ -47,17 +47,17 @@ public class Table {
         if(current.getAnimal()) { //Si c'est un vautour
             for (PlayerCard p : listPlayerCards)
             {
-                if (p.number < min) {//On enregistre qui a posé la valeur min
-                    min = p.number;
+                if (p.value < min) {//On enregistre qui a posé la valeur min
+                    min = p.value;
                     couleur = p.couleur;
                 }
             }
         } else {    // Sinon si c'est une souris
             for(PlayerCard p : listPlayerCards)
             {
-                if(p.number > max)
+                if(p.value > max)
                 {
-                    max = p.number;
+                    max = p.value;
                     couleur = p.couleur;
                 }
             }
