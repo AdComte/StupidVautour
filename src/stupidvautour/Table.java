@@ -43,7 +43,7 @@ public class Table {
     public int win_round() //Renvoie le numéro du joueur gagnant ce coup ci
     {
         int max=0, min=0;
-        int couleur=6;
+        int couleur = -1;
         if(this.current.getAnimal()) { //Si c'est un vautour
             for (PlayerCard p : listPlayerCards)
             {
