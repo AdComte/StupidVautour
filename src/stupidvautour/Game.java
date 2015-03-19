@@ -17,7 +17,7 @@ public class Game {
     private ArrayList<Player> listPlayer;
     
     public Game(int nbPlayer) {
-        this.listPlayer = new ArrayList<Player>();
+        this.listPlayer = new ArrayList<>();
         for (int i=0; i<nbPlayer; i++) {
             this.listPlayer.add(new Player());
         }
