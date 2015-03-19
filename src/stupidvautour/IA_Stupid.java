@@ -5,6 +5,8 @@
  */
 package stupidvautour;
 
+import java.util.Random;
+
 /**
  *
  * @author Vladimir
@@ -13,9 +15,11 @@ public class IA_Stupid extends Player {
     
     public IA_Stupid ()
     {
-        super("Stupid");
+        super();
+        super.setName("Stupid");
     }
-    public void play() {
-        
+    public PlayerCard play() {
+        Random i = new Random();
+        return super.getListPlayerCard().get(i.nextInt(number));
     }
 }

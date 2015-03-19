@@ -17,6 +17,7 @@ public class Table {
     private AnimalCard Current;
     private ArrayList<AnimalCard> Stack;
     
+    
     public Table(){
         this.Player_cards = new ArrayList<> ();
         this.Stack = new ArrayList<> ();
