@@ -22,4 +22,5 @@ public class Game {
             this.listPlayer.add(new Player());
         }
     }
+    
 }
