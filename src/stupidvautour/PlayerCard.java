@@ -11,8 +11,8 @@ package stupidvautour;
  */
 public class PlayerCard extends Card{
     
-    public PlayerCard(int number, boolean visible)
+    public PlayerCard(int number, boolean notPlayed)
     {
-        super(number, visible);
+        super(number, notPlayed);
     }
 }
