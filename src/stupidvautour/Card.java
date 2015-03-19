@@ -25,9 +25,7 @@ public class Card {
     public int getNumber () {
         return this.number;
     }
-    public void setNumber (int i) {
-        this.number = i;
-    }
+
     public boolean getVisible () {
         return this.notPlayed;
     }

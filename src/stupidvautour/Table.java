@@ -6,21 +6,38 @@
 package stupidvautour;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
  * @author Vladimir
  */
 public class Table {
-    private ArrayList<PlayerCard> Player_cards;
-    private AnimalCard Current;
-    private ArrayList<AnimalCard> Stack;
     
+    public final static int NB_VULTURE = 5;
+    public final static int NB_MOUSE = 10;
     
-    public Table(){
-        this.Player_cards = new ArrayList<> ();
-        this.Stack = new ArrayList<> ();
+    private ArrayList<PlayerCard> listPlayerCards;
+    private AnimalCard current;
+    private ArrayList<AnimalCard> stack;
+    private ArrayList<Player> listPlayer;
+    
+    public Table(ArrayList<Player> listPlayer){
+        this.listPlayerCards = new ArrayList<> ();
+        this.stack = new ArrayList<> ();
+        this.listPlayer = listPlayer;
+    }
+    
+    public void deal(int nbCard) {
+        for (int i=1; i<NB_VULTURE+1; i++) {
+            this.stack.add(new AnimalCard(i, true));
+        }
+        for (int i=1; i<NB_MOUSE+1; i++) {
+            this.stack.add(new AnimalCard(i, false));
+        }
+    }
+    
+    public void melanger() {
+        
     }
     
     
