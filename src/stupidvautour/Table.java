@@ -27,12 +27,11 @@ public class Table {
         this.listPlayer = listPlayer;
 
     }
-    
-    // Fait jouer chaque joueur et met leur carte sur la table
-    // Return : Tous les joueurs ont joué une carte sur la table
     public ArrayList<Player> getPlayerlist (){
         return listPlayer;
     }
+    // Fait jouer chaque joueur et met leur carte sur la table
+    // Return : Tous les joueurs ont joué une carte sur la table
     public void play() {
         for (Player p : listPlayer) {
             this.listPlayerCardsOnTable.add(p.play());

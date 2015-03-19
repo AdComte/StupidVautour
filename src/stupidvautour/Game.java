@@ -29,10 +29,10 @@ public class Game {
         int turn=NB_CARDS;
         while(turn>0)
         {
-            table.play();
+            this.table.play();
             turn--;
         }
-        System.out.println("Le joueur numéro "+table.getPlayerHighestScore()+" a gagné ! Bravo à lui");
+        System.out.println("Le joueur numéro "+ this.table.getPlayerHighestScore()+" a gagné ! Bravo à lui");
     }
     
 }
