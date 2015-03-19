@@ -27,12 +27,15 @@ public class Table {
         this.listPlayer = listPlayer;
 
     }
+    
+    // Fait jouer chaque joueur et met leur carte sur la table
+    // Return : Tous les joueurs ont joué une carte sur la table
     public ArrayList<Player> getPlayerlist (){
         return listPlayer;
     }
     public void play() {
         for (Player p : listPlayer) {
-            p.play();
+            this.listPlayerCardsOnTable.add(p.play());
         }
     }
     
@@ -57,6 +60,7 @@ public class Table {
         }
     }
     
+    // TODO
     public void melangerAnimalCard() {
         
     }
