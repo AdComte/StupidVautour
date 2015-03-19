@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Adrien_portable
  */
 public class Game {
-    
+    public final static int NB_CARDS = 15;
     private int nbPlayer;
     private Table table;
     
@@ -25,6 +25,12 @@ public class Game {
         this.table = new Table(listPlayer);
     }
     
-    
+    public void GameLoop () {
+        int turn=NB_CARDS;
+        while(turn>0)
+        {
+            table.play();
+        }
+    }
     
 }

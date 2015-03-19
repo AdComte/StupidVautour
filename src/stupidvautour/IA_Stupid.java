@@ -11,7 +11,7 @@ import java.util.Random;
  *
  * @author Vladimir
  */
-public class IA_Stupid extends Player {
+public class IA_Stupid extends IAPlayer {
     
     public IA_Stupid ()
     {
