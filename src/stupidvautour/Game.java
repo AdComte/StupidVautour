@@ -14,13 +14,14 @@ import java.util.ArrayList;
 public class Game {
     
     private int nbPlayer;
-    private ArrayList<Player> listPlayer;
+    private Table table;
     
     public Game(int nbPlayer) {
-        this.listPlayer = new ArrayList<>();
+        ArrayList<Player>  listPlayer = new ArrayList<>();
         for (int i=0; i<nbPlayer; i++) {
-            this.listPlayer.add(new Player());
+            listPlayer.add(new Player());
         }
+        this.table = new Table(listPlayer);
     }
     
 }

@@ -22,15 +22,11 @@ public class Table {
     private ArrayList<Player> listPlayer;
     private int nbPlayer;
     
-    public Table(ArrayList<Player> listPlayer, int nbPlayer){
+    public Table(ArrayList<Player> listPlayer){
         this.listPlayerCardsOnTable = new ArrayList<> ();
         this.stack = new ArrayList<> ();
         this.listPlayer = listPlayer;
-        
-        this.listPlayer = new ArrayList<>();
-        for (int i=0; i<nbPlayer; i++) {
-            this.listPlayer.add(new Player());
-        }
+
     }
     
     public void deal(int nbCard) {
@@ -42,7 +38,7 @@ public class Table {
         }
     }
     
-    public void melanger() {
+    public void melangerAnimalCard() {
         
     }
     
