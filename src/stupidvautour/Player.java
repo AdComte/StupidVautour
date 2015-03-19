@@ -21,7 +21,7 @@ public abstract class Player {
     private int score; 
 
   
-    public abstract Card play() ;
+    public abstract PlayerCard play() ;
     
     public Player () {
         listPlayerCard = new ArrayList<>();

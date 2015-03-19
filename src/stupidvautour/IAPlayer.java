@@ -11,5 +11,10 @@ package stupidvautour;
  * @author Decalog2
  */
 public class IAPlayer extends Player {
+
+    @Override
+    public PlayerCard play() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
