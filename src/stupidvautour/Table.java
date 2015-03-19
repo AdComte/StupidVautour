@@ -41,6 +41,7 @@ public class Table {
         
     }
     
+    //TODO : cas d'égalité
     public int win_round() //Renvoie le numéro du joueur gagnant ce coup ci
     {
         int max=0, min=0;
@@ -65,9 +66,12 @@ public class Table {
         } return couleur;
     }
     
+    // Passe au tour suivant
+    // On défausse les cartes des joueurs sur le tapis
+    // On retourne une nouvelle carte
     public void next_round () {
-        listPlayerCardsOnTable.clear();//On défosse les cartes des joueurs
-        current = stack.get(0);//On tire une carte
-        stack.remove(0);       //
+        listPlayerCardsOnTable.clear();
+        current = stack.get(0);
+        stack.remove(0);
     }
 }
