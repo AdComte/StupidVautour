@@ -20,7 +20,6 @@ public class Table {
     private AnimalCard current;
     private ArrayList<AnimalCard> stack;
     private ArrayList<Player> listPlayer;
-    private int nbPlayer;
     
     public Table(ArrayList<Player> listPlayer){
         this.listPlayerCardsOnTable = new ArrayList<> ();
