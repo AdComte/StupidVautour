@@ -27,13 +27,27 @@ public class Table {
         this.listPlayer = listPlayer;
 
     }
-    
+    public ArrayList<Player> getPlayerlist (){
+        return listPlayer;
+    }
     public void play() {
         for (Player p : listPlayer) {
             p.play();
         }
     }
     
+    //Retourne le numéro du joueur au plus haut score
+    public int getPlayerHighestScore () {
+        int max = 0, winner=-1;
+        for (Player p : listPlayer)
+        {
+            if (p.getScore() > max)
+            {
+                max = p.getScore();
+                winner = p.getCouleur();
+            }
+        } return winner;
+    }
     public void deal(int nbCard) {
         for (int i=1; i<NB_VULTURE+1; i++) {
             this.stack.add(new AnimalCard(i, true));

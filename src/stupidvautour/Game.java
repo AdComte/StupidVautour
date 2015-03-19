@@ -30,7 +30,9 @@ public class Game {
         while(turn>0)
         {
             table.play();
+            turn--;
         }
+        System.out.println("Le joueur numéro "+table.getPlayerHighestScore()+" a gagné ! Bravo à lui");
     }
     
 }
