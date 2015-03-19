@@ -14,17 +14,33 @@ import java.util.ArrayList;
  */
 public class Player {
     
-    String name;
-    ArrayList<PlayerCard> listPlayerCard;
+    private String name;
+
+
+
+ 
+    private ArrayList<PlayerCard> listPlayerCard;
+    public static int number =0;
+    private int idPlayer;
     
     public Player (String name) {
         this.name = name;
         listPlayerCard = new ArrayList<>();
+        this.idPlayer = number++;
     }
     
     public void deal(int nbCard) {
         for (int i=1; i<nbCard+1; i++) {
             
         }
+    }
+    
+    
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<PlayerCard> getListPlayerCard() {
+        return listPlayerCard;
     }
 }

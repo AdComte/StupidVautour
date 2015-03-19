@@ -10,6 +10,7 @@ package stupidvautour;
  * @author Adrien_portable
  */
 public class PlayerCard extends Card{
+    
     public PlayerCard(int number, boolean visible)
     {
         super(number, visible);
