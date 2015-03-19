@@ -10,5 +10,14 @@ package stupidvautour;
  * @author Adrien_portable
  */
 public class AnimalCard extends Card{
+    private boolean vulture;
     
+    public AnimalCard(int number, boolean vulture){
+        super(number);
+        this.vulture = vulture;
+    }
+    
+    public boolean getAnimal (){
+        return this.vulture;
+    }
 }

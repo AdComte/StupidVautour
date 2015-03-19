@@ -10,8 +10,12 @@ package stupidvautour;
  * @author Adrien_portable
  */
 public class PlayerCard extends Card{
-    public PlayerCard(int number, boolean visible)
+    
+    public int couleur;
+        
+    public PlayerCard(int number, boolean notPlayed, int couleur)
     {
-        super(number, visible);
+        super(number, notPlayed);
+        this.couleur = couleur;
     }
 }
