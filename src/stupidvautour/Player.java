@@ -15,11 +15,11 @@ import java.util.ArrayList;
 public class Player {
     
     String name;
-    ArrayList<Card> listPlayerCard;
+    ArrayList<PlayerCard> listPlayerCard;
     
     public Player (String name) {
         this.name = name;
-        listPlayerCard = new ArrayList<Card>();
+        listPlayerCard = new ArrayList<>();
     }
     
     public void deal(int nbCard) {

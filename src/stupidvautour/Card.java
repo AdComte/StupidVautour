@@ -11,15 +11,15 @@ package stupidvautour;
  */
 public class Card {
     public int number;
-    public boolean visible;
+    public boolean notPlayed;
     
     public Card(int number, boolean visible) {
         this.number = number;
-        this.visible = visible;
+        this.notPlayed = visible;
     }
     public Card (int number) {
         this.number = number;
-        this.visible = false;
+        this.notPlayed = false;
     }
     
     public int getNumber () {
@@ -29,14 +29,14 @@ public class Card {
         this.number = i;
     }
     public boolean getVisible () {
-        return this.visible;
+        return this.notPlayed;
     }
-    public void setVisible(boolean V) {
-        this.visible = V;
+    public void setNotPlayed(boolean V) {
+        this.notPlayed = V;
     }
 
     public  void ToString() {
-        if(visible){
+        if(notPlayed){
         System.out.println("Carte n°"+this.number);}
         else{
             System.out.println("Carte Inconnue");}
