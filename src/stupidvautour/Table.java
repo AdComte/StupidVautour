@@ -28,9 +28,11 @@ public class Table {
 
     }
     
+    // Fait jouer chaque joueur et met leur carte sur la table
+    // Return : Tous les joueurs ont joué une carte sur la table
     public void play() {
         for (Player p : listPlayer) {
-            p.play();
+            this.listPlayerCardsOnTable.add(p.play());
         }
     }
     
@@ -43,6 +45,7 @@ public class Table {
         }
     }
     
+    // TODO
     public void melangerAnimalCard() {
         
     }
