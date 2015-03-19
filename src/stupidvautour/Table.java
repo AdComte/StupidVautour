@@ -61,7 +61,7 @@ public class Table {
         } else {    // Sinon si c'est une souris
             for(PlayerCard p : listPlayerCardsOnTable)
             {
-                if(p.value > max)
+                if(p.value > max)//On récupère le max et le joueur auquel il appartient
                 {
                     max = p.value;
                     couleur = p.couleur;
@@ -70,4 +70,9 @@ public class Table {
         } return couleur;
     }
     
+    public void next_round () {
+        listPlayerCardsOnTable.clear();//On défosse les cartes des joueurs
+        current = stack.get(0);//On tire une carte
+        stack.remove(0);       //
+    }
 }
