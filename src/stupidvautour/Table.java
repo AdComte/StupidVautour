@@ -44,7 +44,7 @@ public class Table {
     {
         int max=0, min=0;
         int couleur=6;
-        if(current.getAnimal()) { //Si c'est un vautour
+        if(this.current.getAnimal()) { //Si c'est un vautour
             for (PlayerCard p : listPlayerCards)
             {
                 if (p.value < min) {//On enregistre qui a posé la valeur min

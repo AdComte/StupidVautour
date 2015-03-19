@@ -18,10 +18,14 @@ public class Player {
     private ArrayList<PlayerCard> listPlayerCard;
     public static int number =0;
     private int couleur;
+    private int score; 
+
+  
     
     public Player () {
         listPlayerCard = new ArrayList<>();
         this.couleur = number++;
+        this.score = 0;
     }
     
     public void deal(int nbCard) {
@@ -30,6 +34,14 @@ public class Player {
         }
     }
     
+    public void setScore(int points) {
+        this.score =  this.score +points;
+    }
+
+    public int getScore() {
+        return score;
+    }
+            
     public String getName() {
         return name;
     }
@@ -40,5 +52,9 @@ public class Player {
     
     public void setName(String name) {
         this.name = name;
+    }
+    
+     public int getCouleur() {
+        return couleur;
     }
 }
