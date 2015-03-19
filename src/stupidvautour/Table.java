@@ -20,6 +20,8 @@ public class Table {
     public Table(){
         this.Player_cards = new ArrayList<> ();
         this.Stack = new ArrayList<> ();
-        Current = Stack.get(0);
     }
+    
+    
+    
 }

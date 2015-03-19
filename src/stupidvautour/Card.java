@@ -19,7 +19,7 @@ public class Card {
     }
     public Card (int number) {
         this.number = number;
-        this.notPlayed = false;
+        this.notPlayed = true;
     }
     
     public int getNumber () {
