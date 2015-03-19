@@ -5,10 +5,21 @@
  */
 package stupidvautour;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Adrien_portable
  */
 public class Game {
     
+    private int nbPlayer;
+    private ArrayList<Player> listPlayer;
+    
+    public Game(int nbPlayer) {
+        this.listPlayer = new ArrayList<Player>();
+        for (int i=0; i<nbPlayer; i++) {
+            this.listPlayer.add(new Player());
+        }
+    }
 }

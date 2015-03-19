@@ -15,26 +15,20 @@ import java.util.ArrayList;
 public class Player {
     
     private String name;
-
-
-
- 
     private ArrayList<PlayerCard> listPlayerCard;
     public static int number =0;
     private int idPlayer;
     
-    public Player (String name) {
-        this.name = name;
+    public Player () {
         listPlayerCard = new ArrayList<>();
         this.idPlayer = number++;
     }
     
     public void deal(int nbCard) {
         for (int i=1; i<nbCard+1; i++) {
-            
+            this.listPlayerCard.add(new PlayerCard(i, true));
         }
     }
-    
     
     public String getName() {
         return name;
@@ -42,5 +36,9 @@ public class Player {
 
     public ArrayList<PlayerCard> getListPlayerCard() {
         return listPlayerCard;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
     }
 }
