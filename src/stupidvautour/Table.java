@@ -33,6 +33,7 @@ public class Table {
     public ArrayList<Player> getPlayerlist (){
         return listPlayer;
     }
+    
     public void play() {
         for (Player p : listPlayer) {
             this.listPlayerCardsOnTable.add(p.play());
