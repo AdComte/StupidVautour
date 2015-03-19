@@ -40,6 +40,28 @@ public class Table {
         
     }
     
-    
+    public int win_round() //Renvoie le numéro du joueur gagnant ce coup ci
+    {
+        int max=0, min=0;
+        int couleur=6;
+        if(current.getAnimal()) { //Si c'est un vautour
+            for (PlayerCard p : listPlayerCards)
+            {
+                if (p.number < min) {//On enregistre qui a posé la valeur min
+                    min = p.number;
+                    couleur = p.couleur;
+                }
+            }
+        } else {    // Sinon si c'est une souris
+            for(PlayerCard p : listPlayerCards)
+            {
+                if(p.number > max)
+                {
+                    max = p.number;
+                    couleur = p.couleur;
+                }
+            }
+        } return couleur;
+    }
     
 }

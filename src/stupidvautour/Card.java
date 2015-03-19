@@ -12,7 +12,6 @@ package stupidvautour;
 public class Card {
     public int number;
     public boolean notPlayed;
-    
     public Card(int number, boolean notPlayed) {
         this.number = number;
         this.notPlayed = notPlayed;
