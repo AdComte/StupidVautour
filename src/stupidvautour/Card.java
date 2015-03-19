@@ -10,20 +10,22 @@ package stupidvautour;
  * @author Vladimir
  */
 public class Card {
-    public int number;
+    public int value;
     public boolean notPlayed;
+
     
     public Card(int number, boolean notPlayed) {
-        this.number = number;
+        this.value = number;
         this.notPlayed = notPlayed;
+        
     }
     public Card (int number) {
-        this.number = number;
+        this.value = number;
         this.notPlayed = true;
     }
     
-    public int getNumber () {
-        return this.number;
+    public int getValue () {
+        return this.value;
     }
 
     public boolean getVisible () {
@@ -35,7 +37,7 @@ public class Card {
 
     public  void ToString() {
         if(notPlayed){
-        System.out.println("Carte n°"+this.number);}
+        System.out.println("Carte n°"+this.value);}
         else{
             System.out.println("Carte Inconnue");}
     }
