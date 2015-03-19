@@ -28,6 +28,12 @@ public class Table {
 
     }
     
+    public void play() {
+        for (Player p : listPlayer) {
+            p.play();
+        }
+    }
+    
     public void deal(int nbCard) {
         for (int i=1; i<NB_VULTURE+1; i++) {
             this.stack.add(new AnimalCard(i, true));
