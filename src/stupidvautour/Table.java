@@ -16,15 +16,21 @@ public class Table {
     public final static int NB_VULTURE = 5;
     public final static int NB_MOUSE = 10;
     
-    private ArrayList<PlayerCard> listPlayerCards;
+    private ArrayList<PlayerCard> listPlayerCardsOnTable;
     private AnimalCard current;
     private ArrayList<AnimalCard> stack;
     private ArrayList<Player> listPlayer;
+    private int nbPlayer;
     
-    public Table(ArrayList<Player> listPlayer){
-        this.listPlayerCards = new ArrayList<> ();
+    public Table(ArrayList<Player> listPlayer, int nbPlayer){
+        this.listPlayerCardsOnTable = new ArrayList<> ();
         this.stack = new ArrayList<> ();
         this.listPlayer = listPlayer;
+        
+        this.listPlayer = new ArrayList<>();
+        for (int i=0; i<nbPlayer; i++) {
+            this.listPlayer.add(new Player());
+        }
     }
     
     public void deal(int nbCard) {
@@ -45,7 +51,7 @@ public class Table {
         int max=0, min=0;
         int couleur = -1;
         if(this.current.getAnimal()) { //Si c'est un vautour
-            for (PlayerCard p : listPlayerCards)
+            for (PlayerCard p : listPlayerCardsOnTable)
             {
                 if (p.value < min) {//On enregistre qui a posé la valeur min
                     min = p.value;
@@ -53,7 +59,7 @@ public class Table {
                 }
             }
         } else {    // Sinon si c'est une souris
-            for(PlayerCard p : listPlayerCards)
+            for(PlayerCard p : listPlayerCardsOnTable)
             {
                 if(p.value > max)
                 {
